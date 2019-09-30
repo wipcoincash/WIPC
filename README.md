@@ -1,7 +1,7 @@
 Wipcoin staging tree 0.14.3
 ===================================
 
-https://www.wipcoincash.org
+https://www.wipcoincash.com
 
 
 What is Wipcoin?
