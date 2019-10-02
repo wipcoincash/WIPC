@@ -1,4 +1,4 @@
-Wipcoin staging tree 0.14.3
+Wipcoin 0.14.3
 ===================================
 
 https://wipcoincash.com
@@ -24,10 +24,17 @@ The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Linux Headless Compilation
 -------
+Compile depends:
+```
+cd depends
+make -j4 (4 is the number of cores that have your vps)
+cd ..
+```
+Compile headless
 ```
 ./autogen.sh
 ./configure --prefix=`pwd`/depends/i686-pc-linux-gnu
-make -j4
+make -j4 (4 is the number of cores that have your vps)
 strip wipcoind wipcoin-cli
 ./wipcoind -daemon
 ```
